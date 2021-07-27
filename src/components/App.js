@@ -35,7 +35,7 @@ class App extends Component {
           contacts={this.state.contacts}
         />
         <h2>Contacts</h2>
-        <Filter onHandleChange={this.onHandleChange} />
+        <Filter onHandleChange={this.onHandleChange} value={this.filter} />
         <ContactList
           onClickDeleteContact={this.onClickDeleteContact}
           contacts={this.state.contacts}
